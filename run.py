@@ -14,6 +14,7 @@ while(opcao != 0):
   print("2 - Listar processos de um usuário")
   #print("3 - Alterar estado")
   print("4 - Trocar prioridade de execução")
+  print("5 - Adicionar Processo")
   print("0 - Sair")
 
   print()
@@ -40,6 +41,8 @@ while(opcao != 0):
   elif(opcao == 4):
     pass
     #os.nice(1)
-
+  elif(opcao == 5):
+    n = input("Digite um novo processo")
+    
   clearT()
 
