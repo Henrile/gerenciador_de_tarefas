@@ -12,9 +12,10 @@ while(opcao != 0):
   print()
   print("1 - Listar processos")
   print("2 - Listar processos de um usuário")
-  #print("3 - Alterar estado")
+  print("3 - Alterar estado")
   print("4 - Trocar prioridade de execução")
   print("0 - Sair")
+  print("ERRO!")
 
   print()
   opcao = int(input("Informe a opção desejada: "))
@@ -39,7 +40,7 @@ while(opcao != 0):
   
   elif(opcao == 4):
     pass
-    #os.nice(1)
+    os.nice(1)
 
   clearT()
 
