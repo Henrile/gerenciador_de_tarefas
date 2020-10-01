@@ -8,11 +8,13 @@ clearT()
 
 opcao = 1
 while(opcao != 0):
+  print("-------------------------------------")
   print("######Gerenciador de Tarefas#########")
+  print("-------------------------------------")
   print()
   print("1 - Listar processos")
   print("2 - Listar processos de um usuário")
-  #print("3 - Alterar estado")
+  #print("3 - Alterar estado")//removed
   print("4 - Trocar prioridade de execução")
   print("0 - Sair")
 
@@ -24,7 +26,7 @@ while(opcao != 0):
       info = proc.as_dict(attrs=['pid', 'name', 'username', 'nice', 'cpu_times', 'status'])
       print('Processo: {} | PID: {} | Nice: {} | User: {} | TempoExec: {} | Status: {} |'.format(info['name'], info['pid'], info['nice'], info['username'], info['cpu_times'][0], info['status']))
     input()
-
+#me deixa aqui renanzin kkkk
   elif(opcao == 2):
     clearT()
     #print(ps.users()) #Era pra trazer os usuários
